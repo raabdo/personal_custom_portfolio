@@ -1,0 +1,23 @@
+{
+    "name": "Rachid Abderrahmane",
+    "jobTitle": "Software Engineeer",
+    "Contacts": {
+        "email": "rachidabderrahman5@gmail.com",
+        "phone": "+86 18930141592",
+        "wechat": {
+            "id": "+86 18930141592",
+            "qr_code_image": ""
+        },
+        "whatsapp": {
+            "link": "https://wa.me/8618930141592",
+            "number": "+86 18930141592"
+        }
+    },
+    "address": "Shanghai, China",
+    "contact_us_email_subject": "Message sent from Portfolio website",
+    "socials": {
+        "linkedin": "https://www.linkedin.com/in/abderrahmane-rachid-328302137/",
+        "instagram": "https://www.instagram.com/ab.rachid/",
+        "github": "https://github.com/raabdo"
+    }
+}
