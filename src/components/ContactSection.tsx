@@ -182,7 +182,7 @@ export const ContactSection = forwardRef<
                     </div>
 
                     <div className="bg-card p-8 rounded-lg shadow-xs">
-                        <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+                        <h3 className="text-2xl font-semibold mb-6">Feel free to contact me</h3>
 
                         <form  ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                             <input type="hidden" name="time"/>
@@ -242,7 +242,7 @@ export const ContactSection = forwardRef<
                                     ""
                                 )}
                             >
-                                {isSending ? <span>Sending...</span> : <span className="inline-flex">Send a message <Send className="md:m-1" size={16} /></span>}
+                                {isSending ? <span>Sending...</span> : <span className="inline-flex">Send me a message <Send className="md:m-1" size={16} /></span>}
                             </button>
                             {status && <p>{status}</p>}
                         </form>
@@ -251,7 +251,7 @@ export const ContactSection = forwardRef<
                 </div>
                 {Object.values(profile.socials).some(link => link !== "") && ( 
                     <div className="pt-8">
-                        <h4 className="font-medium text-2xl mb-4 text-primary">Socials</h4>
+                        <h4 className="font-medium text-2xl mb-4 text-primary">Find me also in</h4>
                         <div className="flex justify-center space-x-4">
                             {profile.socials.github && (
                                 <a 

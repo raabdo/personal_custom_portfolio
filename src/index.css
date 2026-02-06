@@ -5,7 +5,9 @@
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-primary: hsl(var(--primary));
+  --color-tertiary: hsl(var(--tertiary));
   --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-tertiary-foreground: hsl(var(--tertiary-foreground));
   --color-card: hsl(var(--card));
 
   --animate-float: float 6s ease-in-out infinite;
@@ -79,6 +81,33 @@
   background-color: var(--navbar-bg-color);
 }
 
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab.active {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.screenshots img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 @layer base {
   :root{
@@ -87,7 +116,9 @@
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
     --primary: 202 100% 41%;
+    --tertiary: 173 78% 32%;
     --primary-foreground: 210 40% 98%;
+    --tertiary-foreground: 173 40% 12%;
     --border: 214 32% 91%;
   }
   
@@ -97,6 +128,7 @@
     --foreground: 213 31% 91%;
     --card: 222 47% 8%;
     --primary: 250 65% 65%;
+    --tertiary: 173 60% 62%;
     --primary-foreground: 200 31% 91%;
     --border: 217 33% 20%;
   }
@@ -115,7 +147,7 @@
   }
 }
 
-@utility container{
+@utility container {
   margin-inline: auto;
   padding-inline: 2rem;
 
@@ -135,6 +167,7 @@
     max-width: 1400px;
   }
 }
+
 @utility text-glow {
   @apply relative;
   text-shadow: 0 0 10px rgb(167, 139, 0.5);
@@ -150,23 +183,35 @@
   border: 1px solid transparent; 
 }
 
-@utility cosmic-button{
+@utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
   transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
   hover:scale-105 active:scale-95;
 }
 
-@utility star{
+@utility normal-button {
+  @apply font-semibold py-2 px-2 hover:border rounded bg-primary text-primary-foreground
+  transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+  hover:scale-105 active:scale-85;
+}
+
+@utility download-button {
+  @apply font-semibold py-2 px-2 hover:border rounded bg-tertiary text-tertiary-foreground
+  transition-all duration-300 hover:shadow-[0_0_10px_rgba(210,92,246,0.5)]
+  hover:scale-105 active:scale-85;
+}
+
+@utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
 }
 
-@utility meteor{
+@utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
 }
 
-@utility cloud{
+@utility cloud {
   @apply absolute bg-gray-200 rounded-full opacity-80;
 }
 

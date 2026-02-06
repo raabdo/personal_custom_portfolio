@@ -4,7 +4,9 @@ import { ContactSection } from '@/components/ContactSection'
 import { useState, useEffect, useRef } from "react";
 import { Footer } from "@/components/Footer";
 import { SkillsSection } from "@/components/SkillsSection";
-import { TextParagraph } from "@/components/TextParagraph";
+import { TextParagraph } from "@/components/HomeSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
+import { AboutSection } from "@/components/AboutSection";
 
 export const Home = () => {
     
@@ -67,19 +69,30 @@ export const Home = () => {
           < Navbar 
             scrollToSection={scrollToSection}
             activeSection={activeSection}
-            refs={{ heroRef: heroRef, aboutRef, skillsRef: skillsRef, projectsRef: projectsRef, contactRef: contactsRef }}
+            refs={{ heroRef: heroRef, aboutRef: aboutRef, skillsRef: skillsRef, projectsRef: projectsRef, contactRef: contactsRef }}
           />
 
           {/* Home */}
           <TextParagraph 
-            scrollToSection={scrollToSection}
+            navRefs={{ projectsRef: projectsRef, contactRef: contactsRef }}
             ref={heroRef}
+          />
+
+          {/* Project */}
+          <AboutSection
+              ref={aboutRef}
           />
 
           {/* Main Content */}
           <SkillsSection
             ref={skillsRef}
           />
+
+          {/* Project */}
+          <ProjectsSection
+              ref={projectsRef}
+          />
+
 
           {/* Contact */}
           <ContactSection
