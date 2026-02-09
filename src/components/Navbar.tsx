@@ -76,7 +76,7 @@ export const Navbar = (
                 
                 <a className="order-2 md:order-1 text-lg font-bold text-primary flex items-center">
                     <span className="md:flex relative z-10">
-                        <span className="text-glow text-foreground pr-2">Rachid</span>Dev portfolio
+                        <span className="text-xl text-glow text-foreground pr-2">Rachid Abderrahmane | Dev portfolio</span>
                     </span>
                 </a>
 
