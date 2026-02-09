@@ -66,6 +66,11 @@ A simple and customizable portfolio website built with React to showcase project
         },
         // add more projects here
         ];
+5. To add email functionality with EmailJS
+   create a .env file in the base folder and add these 3 variables
+        VITE_EMAILJS_SERVICE_ID=
+        VITE_EMAILJS_TEMPLATE_ID=
+        VITE_EMAILJS_PUBLIC_KEY=
 
 ---
 ## Contributing
@@ -77,4 +82,5 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## License
 
 This project is open-source and free to use.
+
 
