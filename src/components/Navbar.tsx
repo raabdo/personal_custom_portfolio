@@ -63,11 +63,11 @@ export const Navbar = (
                 "fixed w-full z-50 transition-all duration-300",
                 // mobile only
                 isScrolled
-                ? "py-5 navbar bg-background/90 shadow-md md:bg-transparent"
+                ? "py-5 navbar-bg bg-background/90 shadow-md md:bg-transparent"
                 : "py-7",
                 // desktop only
                 isScrolled
-                ? "md:py-5 md:navbar md:bg-background/90 md:backdrop-blur-md md:shadow-md"
+                ? "md:py-5 md:navbar-bg md:bg-background/90 md:backdrop-blur-md md:shadow-md"
                 : "md:py-7"
             )}
         >

@@ -97,9 +97,9 @@ export const ContactSection = forwardRef<
     if (!profile) return <p>Loading...</p>;
     
     return (
-        <section ref={ref} {...props} id="contacts" className="py-24 px-4 relative">
+        <section ref={ref} {...props} id="contacts" className="py-30 px-4 relative">
             <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                     Get in <span className="text-primary">Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
@@ -238,7 +238,7 @@ export const ContactSection = forwardRef<
                                 type="submit"
                                 disabled={isSending}
                                 className={cn(
-                                    "cosmic-button w-full flex items-center justify-center",
+                                    "cosmic-button w-auto ",
                                     ""
                                 )}
                             >

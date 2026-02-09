@@ -1,15 +1,20 @@
-import { FaServer, FaDatabase, FaReact, FaGitAlt, FaRecycle, FaHandshake } from "react-icons/fa";
+import { FaServer, FaDatabase, FaReact, FaGitAlt, FaRecycle, FaHandshake, FaCode } from "react-icons/fa";
 
 export const skills = [
   {
+    icon: FaCode,
+    title: "Programming Languages",
+    description: ["Java (Advanced)", "Javascript/Typescript (Advanced)", "Python (Intermediate)", "C# (beginner)", "SQL (Advanced)"]
+  },
+  {
     icon: FaServer,
     title: "Backend Development",
-    description: ["REST Api", "Spring Framework", "OAuth, JWT", "Hibernate & JPA", "Caching (ehcache)", "Maven", "JUnit testing"]
+    description: ["REST API", "Spring Framework", "OAuth, JWT", "Hibernate & JPA", "Caching (ehcache)", "Maven", "JUnit testing"]
   },
   {
     icon: FaReact,
     title: "Frontend Development",
-    description: ["Typescript", "React.js", "Vue.js", "jQuery", "Responsive Design", "Tailwind.css"]
+    description: ["React.js", "Vue.js", "jQuery", "Responsive Design", "Tailwind.css"]
   },
   {
     icon:  FaDatabase,
@@ -18,13 +23,13 @@ export const skills = [
   },
   {
     icon:  FaGitAlt,
-    title: "Tools",
+    title: "Collaboration Tools",
     description: ["Git Version control", "Agile Scrum"]
   },
   {
     icon: FaRecycle,
     title: "CI/CD",
-    description: ["Jenkins", "Kubernetes", "AWS (EC2, RDS, S3)", "Docker", "Load balancing & autoscaling", "Nginx / Apache"]
+    description: ["Jenkins", "Kubernetes", "AWS (EC2, RDS, S3)", "Docker", "Nginx"]
   },
   {
     icon: FaHandshake,

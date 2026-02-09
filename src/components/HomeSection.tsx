@@ -19,8 +19,8 @@ export const TextParagraph = forwardRef<
   return (
     <section ref={ref} {...props} id="hero" className="py-30 px-4 relative bg-secondary/30 mb-12">
         <div className="container mx-auto max-w-3xl text-center z-10 mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                <span className="text-secondary">Hello there! Welcome</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-center my-12">
+                <span className="text-secondary">Welcome</span>
             </h1>
             <p className="text-xl text-center mb-12 max-w-3xl">
                 I am a <strong className="text-primary">Full-Stack Developer</strong>

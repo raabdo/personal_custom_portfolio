@@ -9,6 +9,7 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-tertiary-foreground: hsl(var(--tertiary-foreground));
   --color-card: hsl(var(--card));
+  --color-navbar: hsl(var(--navbar-bg-color));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse 4s ease-in-out infinite;
@@ -77,7 +78,7 @@
   animation: bounce-slow 4s ease-in-out infinite;
 }
 
-.navbar {
+.navbar-bg {
   background-color: var(--navbar-bg-color);
 }
 
@@ -114,7 +115,7 @@
     --background: 210 40% 98%;
     --navbar-bg-color: #eaf4f4e2;
     --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
+    --card: 12 0% 95%;
     --primary: 202 100% 41%;
     --tertiary: 173 78% 32%;
     --primary-foreground: 210 40% 98%;
@@ -172,8 +173,13 @@
   @apply relative;
   text-shadow: 0 0 10px rgb(167, 139, 0.5);
 }
+
 @utility card-hover {
   @apply transition-transform duration-300 hover:scale-[1.05] hover:shadow-lg;
+}
+
+@utility project-card-hover {
+  @apply transition-transform duration-300 hover:shadow-xl;
 }
 
 @utility gradient-border {

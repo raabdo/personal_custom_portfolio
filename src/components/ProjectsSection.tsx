@@ -9,15 +9,13 @@ export const ProjectsSection = forwardRef<
 > ((props, ref) => {
     const projectsData: Project[] = projects;
   return (
-    <section ref={ref} {...props} id="projects" className="py-24 px-2 relative bg-secondary/30">
+    <section ref={ref} {...props} id="projects" className="py-30 px-2 relative bg-secondary/30">
       <div className="container-2xl mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           <span className="text-secondary">Projects</span>
         </h2>
-        <p className="text-center text-muted-foreground text-sm mx-auto mb-12">
-          Below is a selection of projects I’ve worked on, showcasing my experience and approach to software development.
-          <br />
-          <strong>-Certain details in the screenshots have been intentionally redacted for privacy and data protection purposes-</strong>
+        <p className="text-center text-muted-foreground mx-auto mb-12">
+          A selection of projects showcasing my work. Certain screenshot details are redacted for privacy.
         </p>
         <ProjectsTabs
             ref={ref}
