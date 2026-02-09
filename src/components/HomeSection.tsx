@@ -46,7 +46,8 @@ export const TextParagraph = forwardRef<
               </button>
               <a
                 className="download-button w-auto"
-                href="/files/rachid-abderrahmane-cv.pdf" 
+                // Add correct path to CV (default public/files/) 
+                href="/files/cv.pdf" 
                 download
               >
                 {<span className="inline-flex px-4">Resume/CV< FiDownload className="m-1"/></span>}

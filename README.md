@@ -15,7 +15,7 @@ A simple and customizable portfolio website built with React to showcase project
 - TypeScript
 - Vite
 - Tailwind CSS
-
+---
 ## Getting Started
 
 ### Prerequisites
@@ -24,7 +24,57 @@ A simple and customizable portfolio website built with React to showcase project
 
 ### Installation
 ```bash
-git clone https://github.com/raabdo/personal_custom_portfolio.git
-cd portfolio
-npm install
-npm run dev
+    git clone https://github.com/raabdo/personal_custom_portfolio.git
+    cd portfolio
+    npm install
+    npm run dev 
+```
+
+1. Add Your CV
+    ```
+    /public/files/cv.pdf
+2. Place your images in
+    ```
+    /static/img/my
+    export const personalImages = [
+    "/static/img/my/image1.jpg",
+    "/static/img/my/image2.jpg",
+    // add more images here
+    ];
+3. Customize skills
+    ```
+    export const skills = [
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        // add your skills here
+    ];
+
+4. Customer Projects
+    ```
+    export const projects = [
+        {
+            id: "project1",
+            title: "My Awesome Project",
+            description: "A short description of your project.",
+            techStack: ["React", "TypeScript", "Tailwind CSS"],
+            screenshots: [
+            "/static/img/projects/project1/-1.png",
+            "/static/img/projects/project1/-2.png"
+            ]
+        },
+        // add more projects here
+        ];
+
+---
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+## License
+
+This project is open-source and free to use.
+
